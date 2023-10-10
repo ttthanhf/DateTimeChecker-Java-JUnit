@@ -61,30 +61,22 @@ public class DateTimeChecker {
         return true;
     }
 
-    public static boolean validDayInMonth(Object day, Object month, Object year) {
-        if (onlyInt(day) && onlyInt(month) && onlyInt(year)) {
-            int intDay = Integer.parseInt(day.toString());
+    public static int getDayByMonthAndYear(Object month, Object year) {
+        if (onlyInt(month) && onlyInt(year)) {
             int intMonth = Integer.parseInt(month.toString());
             int intYear = Integer.parseInt(year.toString());
-
             if (intMonth == 4 || intMonth == 6 || intMonth == 9 || intMonth == 11) {
-                return intDay != 31;
-            } else if (intMonth == 2) {
-                if (intDay > 29) {
-                    return false;
-                }
-                if (!isLeapYear(intYear) && intDay == 29) {
-                    return false;
-                }
+                return 30;
             }
-            return true;
+            if (intMonth == 2) {
+                if (isLeapYear(intYear)) {
+                    return 29;
+                }
+                return 28;
+            }
+            return 31;
         }
-
-        return false;
-    }
-
-    public static boolean validDate(int day, int month, int year) {
-        return validDay(day) && validMonth(month) && validYear(year) && validDayInMonth(day, month, year);
+        return 0;
     }
 
     public static boolean validDate(Object day, Object month, Object year) {
