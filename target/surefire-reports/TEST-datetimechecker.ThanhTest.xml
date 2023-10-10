@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="datetimechecker.DateTimeCheckerTest" time="0.04" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="datetimechecker.ThanhTest" time="0.038" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,9 +15,9 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\ThanhF\AppData\Local\Temp\surefire17037769775057026670\surefirebooter-20231007082819636_3.jar C:\Users\ThanhF\AppData\Local\Temp\surefire17037769775057026670 2023-10-07T08-28-19_495-jvmRun1 surefire-20231007082819636_1tmp surefire_0-20231007082819636_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\ThanhF\AppData\Local\Temp\surefire3328125952290246169\surefirebooter-20231007093346916_3.jar C:\Users\ThanhF\AppData\Local\Temp\surefire3328125952290246169 2023-10-07T09-33-46_792-jvmRun1 surefire-20231007093346916_1tmp surefire_0-20231007093346916_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="datetimechecker.DateTimeCheckerTest"/>
+    <property name="test" value="datetimechecker.ThanhTest"/>
     <property name="surefire.test.class.path" value="C:\MyData\Code\swt\DateTimeChecker\target\test-classes;C:\MyData\Code\swt\DateTimeChecker\target\classes;C:\Users\ThanhF\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\ThanhF\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\ThanhF\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\ThanhF\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\ThanhF\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\ThanhF\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\ThanhF\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\ThanhF"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ThanhF\AppData\Local\Temp\surefire17037769775057026670\surefirebooter-20231007082819636_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ThanhF\AppData\Local\Temp\surefire3328125952290246169\surefirebooter-20231007093346916_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
@@ -58,14 +58,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testInvalidDate" classname="datetimechecker.DateTimeCheckerTest" time="0.015"/>
-  <testcase name="testStringInputsNotNumber" classname="datetimechecker.DateTimeCheckerTest" time="0.0"/>
-  <testcase name="testEmptyDate" classname="datetimechecker.DateTimeCheckerTest" time="0.001"/>
-  <testcase name="testValidDateLeapYear" classname="datetimechecker.DateTimeCheckerTest" time="0.001"/>
-  <testcase name="testValidDate" classname="datetimechecker.DateTimeCheckerTest" time="0.001"/>
-  <testcase name="testNegativeDay" classname="datetimechecker.DateTimeCheckerTest" time="0.001"/>
-  <testcase name="testStringInputs" classname="datetimechecker.DateTimeCheckerTest" time="0.0"/>
-  <testcase name="testNullInputs" classname="datetimechecker.DateTimeCheckerTest" time="0.0"/>
-  <testcase name="testInvalidMonth" classname="datetimechecker.DateTimeCheckerTest" time="0.0"/>
-  <testcase name="testValidDateNonLeapYear" classname="datetimechecker.DateTimeCheckerTest" time="0.001"/>
+  <testcase name="checkDayInMonthUTCID01" classname="datetimechecker.ThanhTest" time="0.019"/>
+  <testcase name="checkDayInMonthUTCID02" classname="datetimechecker.ThanhTest" time="0.001"/>
+  <testcase name="checkDayInMonthUTCID03" classname="datetimechecker.ThanhTest" time="0.001"/>
+  <testcase name="checkDayInMonthUTCID04" classname="datetimechecker.ThanhTest" time="0.001"/>
+  <testcase name="checkDayInMonthUTCID05" classname="datetimechecker.ThanhTest" time="0.001"/>
 </testsuite>

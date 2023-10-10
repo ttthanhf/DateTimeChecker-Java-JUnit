@@ -72,7 +72,7 @@ public class DateTimeCheckerTest {
         boolean rs = DateTimeChecker.validDate("10", "8", "2022");
         assertEquals(true, rs);
     }
-    
+
     @Test
     public void testStringInputsNotNumber() {
         boolean rs = DateTimeChecker.validDate("1asd", "8asd", "dassa");
@@ -88,6 +88,18 @@ public class DateTimeCheckerTest {
     @Test
     public void testValidDateNonLeapYear() {
         boolean rs = DateTimeChecker.validDate(29, 2, 2021);
+        assertEquals(false, rs);
+    }
+
+    @Test
+    public void testEmptyDate() {
+        boolean rs = DateTimeChecker.validDate("", "", "");
+        assertEquals(false, rs);
+    }
+
+    @Test
+    public void testZeroInput() {
+        boolean rs = DateTimeChecker.validDate(0, 0, 0);
         assertEquals(false, rs);
     }
 
